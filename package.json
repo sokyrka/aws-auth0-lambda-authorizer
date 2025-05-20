@@ -1,0 +1,15 @@
+{
+  "name": "aws-auth0-lambda-authorizer",
+  "version": "1.0.0",
+  "description": "This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.",
+  "main": "authorizerHandler.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ievgenii Sokyrka",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-lambda": "^1.0.6",
+    "aws-sdk": "^2.798.0"
+  }
+}
