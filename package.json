@@ -9,7 +9,8 @@
   "author": "Ievgenii Sokyrka",
   "license": "ISC",
   "devDependencies": {
-    "aws-lambda": "^1.0.6",
-    "aws-sdk": "^2.798.0"
+    "@types/aws-lambda": "^8.10.149",
+    "aws-lambda": "1.0.7",
+    "aws-sdk": "2.1692.0"
   }
 }
