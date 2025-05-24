@@ -6,7 +6,10 @@
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "esbuild index.ts --bundle --minify --sourcemap --platform=node --target=es2020 --outfile=dist/index.js",
-    "postbuild": "rm -rf lambda-package && mkdir lambda-package && cp dist/index.js lambda-package/ && cp package*.json lambda-package/ && cp -R node_modules lambda-package/ && cd lambda-package && zip -r ../aws-auth0-lambda-authorizer.zip . && cd .. && rm -rf lambda-package"
+    "postbuild": "rm -rf lambda-package && mkdir lambda-package && cp dist/index.js lambda-package/ && cp package*.json lambda-package/ && cp -R node_modules lambda-package/ && cd lambda-package && zip -r ../aws-auth0-lambda-authorizer.zip . && cd .. && rm -rf lambda-package",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "author": "Ievgenii Sokyrka",
   "license": "ISC",
@@ -19,8 +22,11 @@
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.149",
+    "@types/jest": "^29.5.14",
     "aws-lambda": "1.0.7",
     "aws-sdk": "2.1692.0",
-    "esbuild": "^0.25.4"
+    "esbuild": "^0.25.4",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.4"
   }
 }
