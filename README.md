@@ -1,4 +1,8 @@
 # 🔐 AWS Lambda Authorizer with JWT + JWKS (Auth0-ready)
+![Build](https://img.shields.io/badge/build-passing-brightgreen)
+![Tested](https://img.shields.io/badge/tests-passing-blue)
+![SAM](https://img.shields.io/badge/deploy-SAM--ready-orange)
+![TypeScript](https://img.shields.io/badge/code-TypeScript-blue)
 
 Custom AWS Lambda authorizer for API Gateway that validates JWTs using a JWKS endpoint.
 
@@ -77,3 +81,12 @@ Example event.json:
 3. Lambda Function: jwt-authorizer
 4. Attach it to methods you want protected
 5. Deployment stage must have permissions to call the Lambda
+
+---
+
+## 📎 Featured Portfolio Project
+
+This Lambda Authorizer is featured in my professional portfolio on Upwork.  
+🔗 View the project: [Upwork Portfolio](https://www.upwork.com/freelancers/~012f08ee1cb0554fb6?p=1926602258199896064)
+
+If you're looking to build secure AWS-based APIs — feel free to reach out.
