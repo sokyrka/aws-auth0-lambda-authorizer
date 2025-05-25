@@ -6,7 +6,7 @@ Custom AWS Lambda authorizer for API Gateway that validates JWTs using a JWKS en
 
 ## 📦 Tech Stack
 
-- Node.js 18.x
+- Node.js 22.x
 - TypeScript + esbuild
 - `jsonwebtoken`, `jwks-rsa`
 - AWS Lambda + SAM
